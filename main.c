@@ -1,4 +1,6 @@
-// Copyright Mark Qvist / unsigned.io
+// MicroAPRS W3AXL Fork 
+//
+// Original Code Copyright Mark Qvist / unsigned.io
 // https://unsigned.io/microaprs
 //
 // Licensed under GPL-3.0. For full info,

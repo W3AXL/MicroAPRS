@@ -1,8 +1,15 @@
-// Copyright Mark Qvist / unsigned.io
-// https://unsigned.io/microaprs
-//
-// Licensed under GPL-3.0. For full info,
-// read the LICENSE file.
+/** MicroAPRS W3AXL Changes
+*
+* Changed:  Clock speed to 8MHz for M328P internal oscillator
+            Open squelch: false
+            5V reference
+*
+* Copyright Mark Qvist / unsigned.io
+* https://unsigned.io/microaprs
+*
+* Licensed under GPL-3.0. For full info,
+* read the LICENSE file.
+*/
 
 #include "util/constants.h"
 
@@ -11,14 +18,14 @@
 
 // CPU settings
 #define TARGET_CPU m328p
-#define F_CPU 16000000
+#define F_CPU 8000000
 #define FREQUENCY_CORRECTION 0
 
 // ADC settings
-#define OPEN_SQUELCH true
-#define ADC_REFERENCE REF_3V3
+#define OPEN_SQUELCH false
+#define ADC_REFERENCE REF_5V
 // OR
-//#define ADC_REFERENCE REF_5V
+//#define ADC_REFERENCE REF_3V3
 
 // Sampling & timer setup
 #define CONFIG_AFSK_DAC_SAMPLERATE 9600
