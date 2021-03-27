@@ -23,9 +23,9 @@
 
 // ADC settings
 #define OPEN_SQUELCH false
-#define ADC_REFERENCE REF_5V
+//#define ADC_REFERENCE REF_5V
 // OR
-//#define ADC_REFERENCE REF_3V3
+#define ADC_REFERENCE REF_3V3
 
 // Sampling & timer setup
 #define CONFIG_AFSK_DAC_SAMPLERATE 9600
