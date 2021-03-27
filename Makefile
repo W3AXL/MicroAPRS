@@ -18,7 +18,7 @@ TARGET = images/MicroAPRS
 # to get a full listing.
 AVRDUDE_PROGRAMMER = arduino       
 
-AVRDUDE_PORT = /dev/usb    # not really needed for usb 
+AVRDUDE_PORT = /dev/ttyS12    # not really needed for usb 
 #AVRDUDE_PORT = /dev/parport0           # linux
 # AVRDUDE_PORT = lpt1		       # windows
 
@@ -121,7 +121,7 @@ LDFLAGS += -lm
 AVRDUDE_WRITE_FLASH = -U flash:w:$(TARGET).hex
 #AVRDUDE_WRITE_EEPROM = -U eeprom:w:$(TARGET).eep
 
-AVRDUDE_FLAGS = -p $(MCU) -P $(AVRDUDE_PORT) -c $(AVRDUDE_PROGRAMMER)
+AVRDUDE_FLAGS = -v -p $(MCU) -P $(AVRDUDE_PORT) -c $(AVRDUDE_PROGRAMMER) -b 19200
 
 # Uncomment the following if you want avrdude's erase cycle counter.
 # Note that this counter needs to be initialized first using -Yn,
